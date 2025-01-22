@@ -8,7 +8,7 @@ with open('feed.yaml', 'r') as file:
     'xmlns:itunes':'http://www.itunes.com/dtds/podcast-1.0.dtd',
     'xmlns:content':'http://purl.org/rss/1.0/modules/content'})
 
-    channele_element = xml_tree.SubElement(rss_element, 'channel')
+    channele_element = xml_tree.SubElement(rss_element, 'channel') 
 
     link_prefix = yaml_data['link']
 
