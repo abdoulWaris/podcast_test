@@ -10,7 +10,7 @@ with open('feed.yaml', 'r') as file:
 
     channele_element = xml_tree.SubElement(rss_element, 'channel') 
 
-    link_prefix = yaml_data['link'] 
+    link_prefix = yaml_data['link']
 
     xml_tree.SubElement(channele_element,'title').text = yaml_data['title']
     xml_tree.SubElement(channele_element,'format').text = yaml_data['format']
